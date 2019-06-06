@@ -287,8 +287,6 @@ Error message and password prompt
 
 <li>New Reference</li>
 
-<li>New Task</li>
-
 <li>New Tiddler</li>
 
 <li>NewProjectButton</li>
@@ -316,6 +314,8 @@ Error message and password prompt
 <li>Tasks Table Config</li>
 
 <li>Time-Sensitive Tasks</li>
+
+<li>Todo Tasks</li>
 
 <li>Unprocessed Readings</li>
 
@@ -9287,8 +9287,8 @@ Projects</pre>
 <div created="20190606015421576" modified="20190606015421576" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20190605011742059" modified="20190605023005378" title="$:/state/tab--2123045323">
-<pre>All Tasks</pre>
+<div created="20190605011742059" modified="20190606045125095" title="$:/state/tab--2123045323">
+<pre>Todo Tasks</pre>
 </div>
 <div created="20190605031606611" modified="20190605031606611" title="$:/state/tab-1741433815">
 <pre>All Readings</pre>
@@ -9302,8 +9302,8 @@ Projects</pre>
 <div created="20190604051543380" modified="20190606011222078" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20190604050413984" modified="20190606030147269" title="$:/state/tab/sidebar--595412856">
-<pre>Contents</pre>
+<div created="20190604050413984" modified="20190606045503832" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20190604212358947" modified="20190604213114747" title="$:/state/tables/Sort/Row/creation-date status LOE type subject">
 <pre>status</pre>
@@ -9329,7 +9329,7 @@ Projects</pre>
 <div created="20190604213029245" modified="20190604213029245" show="TestTask2" title="$:/state/Tasks Table Config/Display Rows/TestTask2">
 <pre></pre>
 </div>
-<div created="20190606015359195" list="Contents References [[New Reference]] Tasks [[Reading List]] Projects" modified="20190606020347432" title="$:/StoryList">
+<div created="20190606045321487" list="Tasks [[Reading List]] Projects" modified="20190606045512097" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190604054322713" list="$:/core/ui/Buttons/new-tiddler NewTaskButton NewProjectButton NewReadingTaskButton NewReferenceButton $:/core/ui/Buttons/home $:/core/ui/Buttons/close-all $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/unfold-all $:/core/ui/Buttons/permaview $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/new-image $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/manager $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/palette $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/print $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions" modified="20190606020114193" title="$:/tags/PageControls">
@@ -9407,8 +9407,8 @@ Projects</pre>
 <div config_tiddler_name="Tasks Table Config" created="20190604212621520" modified="20190604212731505" title="$:/temp/MakeTableWizard">
 <pre></pre>
 </div>
-<div created="20190604044708751" modified="20190606020319530" title="$:/temp/search">
-<pre></pre>
+<div created="20190604044708751" modified="20190606045046173" title="$:/temp/search">
+<pre>In-Pr</pre>
 </div>
 <div created="20190604054231642" modified="20190604054235811" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -9758,7 +9758,7 @@ Projects</pre>
 <pre>&lt;&lt;reading-list In-Progress&gt;&gt;
 </pre>
 </div>
-<div caption="In-Progress" created="20190605011855786" modified="20190605020739036" tags="" title="In-Progress Tasks">
+<div caption="In-Progress" created="20190605011855786" modified="20190606045156267" tags="" title="In-Progress Tasks">
 <pre>&lt;&lt;task-list In-Progress&gt;&gt;</pre>
 </div>
 <div caption="Killed" created="20190605021055309" modified="20190605034342303" tags="" title="Killed Tasks">
@@ -9783,12 +9783,6 @@ Projects</pre>
 </div>
 <div created="20190606022327525" creation-date="2019-06-05" desc="" modified="20190606022338840" tags="Reference" title="New Reference">
 <pre>''description'': {{!!desc}} &lt;br&gt;
-</pre>
-</div>
-<div created="20190605025045593" creation-date="2019-06-04" desc="" loe="-1" modified="20190605025124918" setting="" status="Unprocessed" tags="Task" task-type="other" title="New Task">
-<pre>''description'': {{!!desc}} &lt;br&gt;
-''status:'' &lt;&lt;StatusDropDown&gt;&gt; &lt;br&gt; 
-''level-of-effort:'' &lt;&lt;LOEDropDown&gt;&gt; &lt;br&gt;
 </pre>
 </div>
 <div created="20190605032310473" creation-date="2019-06-04" modified="20190605032504516" status="Unprocessed" tags="Project" title="New Tiddler">
@@ -9851,8 +9845,8 @@ Projects</pre>
 
 {{NewProjectButton}}</pre>
 </div>
-<div created="20190605025616530" modified="20190606025543148" tags="toc" title="Reading List">
-<pre>&lt;&lt;tabs &quot;[[In-Progress Readings]] [[Waiting Readings]] [[Completed Readings]] [[All Readings]]&quot; &quot;[[In-Progress Readings]]&quot;&gt;&gt;
+<div created="20190605025616530" modified="20190606044955063" tags="toc" title="Reading List">
+<pre>&lt;&lt;tabs &quot;[[In-Progress Readings]] [[Waiting Readings]] [[Completed Readings]] [[Unprocessed Readings]] [[All Readings]]&quot; &quot;[[In-Progress Readings]]&quot;&gt;&gt;
 
 {{NewReadingTaskButton}}</pre>
 </div>
@@ -10317,7 +10311,7 @@ $:/state/tables/Sort/$(RowOrColumn)$/$(FieldsList)$
 <div class-type="Task" created="20190605034127622" modified="20190605034700847" tags="class" title="Task">
 <pre></pre>
 </div>
-<div created="20190604054502788" modified="20190606025505828" tags="toc" title="Tasks">
+<div created="20190604054502788" modified="20190606045143649" tags="toc" title="Tasks">
 <pre>&lt;!--
 &lt;table&gt;
 &lt;tr&gt;
@@ -10340,7 +10334,7 @@ $:/state/tables/Sort/$(RowOrColumn)$/$(FieldsList)$
 &lt;/table&gt;
 --&gt;
 
-&lt;&lt;tabs &quot;[[In-Progress Tasks]] [[Time-Sensitive Tasks]] [[Blocked Tasks]] [[Unprocessed Tasks]] [[Completed Tasks]] [[All Tasks]]&quot; &quot;[[In-Progress Tasks]]&quot;&gt;&gt;
+&lt;&lt;tabs &quot;[[In-Progress Tasks]] [[Todo Tasks]] [[Time-Sensitive Tasks]] [[Blocked Tasks]] [[Unprocessed Tasks]] [[Completed Tasks]] [[All Tasks]]&quot; &quot;[[In-Progress Tasks]]&quot;&gt;&gt;
 
 {{NewTaskButton}}
 
@@ -10361,6 +10355,9 @@ $:/state/tables/Sort/$(RowOrColumn)$/$(FieldsList)$
 </div>
 <div caption="Time-Sensitive" created="20190605021029372" modified="20190605021227198" tags="" title="Time-Sensitive Tasks">
 <pre>&lt;&lt;task-list Time-Sensitive&gt;&gt;</pre>
+</div>
+<div caption="Todo" created="20190606045055064" modified="20190606045140331" tags="" title="Todo Tasks">
+<pre>&lt;&lt;task-list Waiting&gt;&gt;</pre>
 </div>
 <div caption="Unprocessed" created="20190605031145572" modified="20190605031924082" tags="" title="Unprocessed Readings">
 <pre>&lt;&lt;reading-list Unprocessed&gt;&gt;

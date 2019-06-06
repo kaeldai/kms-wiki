@@ -58,7 +58,7 @@ class BookMarkParser(HTMLParser):
             "creation-date": self._create_date,
             "status": "Unprocessed",
             "LOE": "-1",
-            "task-type":self._header,
+            "task-type": category,
             "setting": "",
             "title": title,
             "created": self._datetime_fmt,
